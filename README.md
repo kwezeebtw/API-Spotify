@@ -1,5 +1,5 @@
 # Groupe :
 
-AUGEREAU Bastien
-LOCHAIN Alexandre
+AUGEREAU Bastien  
+LOCHAIN Alexandre  
 MOQUET Alexandre
