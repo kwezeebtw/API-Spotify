@@ -1,7 +1,6 @@
-import { AcceuilComponent } from './acceuil/acceuil.component';
+import { AccueilComponent } from './accueil/accueil.component';
 import { MenuComponent } from './menu/menu.component';
 import { Component, OnInit, ViewChild  } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +10,7 @@ import { Component, OnInit, ViewChild  } from '@angular/core';
 
 export class AppComponent {
   /* On récupère le composant enfant : accueil */
-  @ViewChild(AcceuilComponent) accueil: AcceuilComponent;
+  @ViewChild(AccueilComponent) accueil: AccueilComponent;
   /* On récupère le composant menu : accueil */
   @ViewChild(MenuComponent) menu: MenuComponent;
   /*

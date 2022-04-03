@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit {
   activeAccueil:boolean
   activeSpotify:boolean
   activeLyrics:boolean
-  activeInfos:boolean
+  activeStatistiques:boolean
   activeConcert:boolean
   activeContact:boolean
   activeAPropos:boolean
@@ -28,7 +28,7 @@ export class MenuComponent implements OnInit {
     this.isConnected = false;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -40,8 +40,8 @@ export class MenuComponent implements OnInit {
       case "accueil":
         this.activerAccueil_Event();
         break;
-      case "infos":
-        this.activerInfos_Event();
+      case "recherche":
+        this.activerStatistiques_Event();
         break;
       case "spotify":
         this.activerSpotify_Event();
@@ -68,7 +68,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = true;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -80,7 +80,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = true;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -91,7 +91,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = true;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -103,7 +103,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = true;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -114,7 +114,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = true;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -126,18 +126,18 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = true;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = false;
   }
 
   //Lance l'affichage de la section Infos
-  activerInfos() : void {
+  activerStatistiques() : void {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = true;
+    this.activeStatistiques = true;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -145,11 +145,11 @@ export class MenuComponent implements OnInit {
   }
 
   //Activation de la section Infos dans le menu
-  activerInfos_Event() : void {
+  activerStatistiques_Event() : void {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = true;
+    this.activeStatistiques = true;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -160,7 +160,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = true;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -172,7 +172,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = true;
     this.activeContact = false;
     this.activeAPropos = false;
@@ -183,7 +183,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = true;
     this.activeAPropos = false;
@@ -195,7 +195,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = true;
     this.activeAPropos = false;
@@ -206,7 +206,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = true;
@@ -218,7 +218,7 @@ export class MenuComponent implements OnInit {
     this.activeAccueil = false;
     this.activeSpotify = false;
     this.activeLyrics = false;
-    this.activeInfos = false;
+    this.activeStatistiques = false;
     this.activeConcert = false;
     this.activeContact = false;
     this.activeAPropos = true;

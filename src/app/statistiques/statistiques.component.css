@@ -1,0 +1,22 @@
+.vertical-line{
+        border-left: 2px solid #aedd94;
+        display: inline-block;
+        height: 380px;
+        margin: 0 50px;
+        top: 1;
+      }
+
+.inline-div {
+      display:inline-block;
+}
+
+.inline-txtarea {
+      resize: none;
+      border : 2px solid black;
+      height: 400px;
+}
+
+.tabulation {
+display: inline-block;
+margin-left: 275px;
+}

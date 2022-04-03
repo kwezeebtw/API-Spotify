@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  loading:boolean;
+  
   constructor() { }
 
   ngOnInit(): void {
